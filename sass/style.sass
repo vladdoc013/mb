@@ -1,0 +1,100 @@
+@import 'normalizes.scss'
+@import 'resets.scss'
+
+*
+    box-sizing: border-box
+
+@font-face 
+    font-family: "Monser"
+    src: url('../fonts/Montserrat-Regular.ttf')
+    font-weight: regular
+    font-style: normal
+
+@font-face 
+    font-family: "Monser"
+    src: url('../fonts/Montserrat-SemiBold.ttf')
+    font-weight: bold
+    font-style: normal
+
+html
+    font-family: "Monser"
+
+.main-section
+    background-color: #EDEBEB
+    min-height: 800px
+    &__nav
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        &-ul
+            display: flex
+            flex-direction: row
+            &-li
+                font-size: 16px
+                font-weight: bold
+                margin-right: 15px
+                &:last-child
+                    margin-right: 0px
+    &__left
+        position: relative
+        top: 158px
+        width: 420px
+        height: 237px
+        &-text
+            font-size: 16px
+        &-box
+            width: 165px
+            height: 35px
+            border: 1px solid black
+            border-radius: 100px
+            margin-bottom: 25px
+            display: flex
+            justify-content: center
+            align-items: center
+        &-title
+            font-size: 64px      
+    &__container
+        position: relative
+        padding-top: 15px
+.main-section-content
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    min-height: 700px
+    img
+        position: absolute
+        top: 290px
+        left: 178px
+.title_span
+    font-size: 32px
+    font-weight: bold
+    color:#EB3B3B
+.text_span
+    font-size: 16px
+    font-weight: bold
+    color:#EB3B3B
+.container
+    width: 1140px
+    margin: 0 auto
+.link
+    a
+    text-decoration: none
+    font-size: 16px
+    font-weight: bold
+    color: black
+.main-section__right
+    position: relative
+    top: 158px
+    width: 200px
+    height: 237px
+    &-item-text
+        font-size: 16px
+        line-height: normal
+.main-section__footer
+    height: 30px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    p
+        text-transform: uppercase
